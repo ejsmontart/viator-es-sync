@@ -1,0 +1,25 @@
+{
+    "description": "Viator Data Synchronizing container",
+    "keywords": [
+        "php",
+        "api"
+    ],
+    "homepage": "https://github.com/aws/mit-0",
+    "license": "MIT-0",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0",
+        "analog/analog": "^1.0",
+        "elasticsearch/elasticsearch": "^7.0",
+        "caseyamcl/guzzle_retry_middleware": "2.7"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Viator\\": "src/Viator" 
+        }
+    }
+}

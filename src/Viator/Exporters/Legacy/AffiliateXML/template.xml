@@ -1,0 +1,77 @@
+<Products xmlns="http://www.viator.com/vap">
+    <VersionNo>1.0</VersionNo>
+    <CreationDate/>
+
+    <!-- https://www.partner.viator.com/partner/admin/tools/links_feeds/downloadFeed.jspa?feed=DestProducts&format=xml&regionID=363&countryID=22&PUID=8008&unzipped=true --> 
+    
+    <Product>
+        <Rank>1</Rank>
+        <ProductType>SITours_NEW</ProductType>
+        <ProductCode>103772P2</ProductCode>
+        <ProductName>
+            <![CDATA[ Helicopter Tour - Sirromet Winery & Scenic Flight ]]>
+        </ProductName>
+        <Introduction>
+            <![CDATA[ Experience luxury with a private helicopter flight over ... WITH ITINERARY HTML ]]>
+        </Introduction>
+        <ProductText>
+            <![CDATA[ Experience luxury with a private helicopter flight over ... ]]>
+        </ProductText>
+        <SpecialDescription/>
+        <Special>0</Special>
+        <Duration>2 to 3 hours</Duration>
+        <Commences>Brisbane, Australia</Commences>
+        <ProductImage>
+            <ThumbnailURL>https://media.tacdn.com/media/attractions-splice-spp-75x75/06/e4/fc/cb.jpg</ThumbnailURL>
+            <ImageURL>https://media.tacdn.com/media/attractions-splice-spp-240x160/06/e4/fc/cb.jpg</ImageURL>
+        </ProductImage>
+        <Destination>
+            <ID>363</ID>
+            <Continent>Australasia</Continent>
+            <Country>Australia</Country>
+            <Region>Queensland</Region>
+            <City>Brisbane</City>
+            <IATACode>BNE</IATACode>
+        </Destination>
+        <ProductCategories>
+            <ProductCategory>
+                <Group>Air, Helicopter & Balloon Tours</Group>
+                <Category>Helicopter Tours</Category>
+                <Subcategory>Helicopter Tour</Subcategory>
+            </ProductCategory>
+            <ProductCategory>
+                <Group>Private & Custom Tours</Group>
+                <Category>Private Sightseeing Tours</Category>
+                <Subcategory>Private Tours</Subcategory>
+            </ProductCategory>
+            <ProductCategory>
+                <Group>Food, Wine & Nightlife</Group>
+                <Category>Wine Tasting & Winery Tours</Category>
+                <Subcategory>Wine Tour</Subcategory>
+            </ProductCategory>
+        </ProductCategories>
+        <ProductURLs>
+            <ProductURL>http://www.partner.viator.com/en/8008/tours/Brisbane/Helicopter-Tour-Sirromet-Winery-and-Scenic-Flight/d363-103772P2</ProductURL>
+        </ProductURLs>
+        <Pricing>
+            <PriceAUD>389.87</PriceAUD>
+            <PriceNZD>423.00</PriceNZD>
+            <PriceEUR>250,89</PriceEUR>
+            <PriceGBP>209.59</PriceGBP>
+            <PriceUSD>285.32</PriceUSD>
+            <PriceCAD>358.90</PriceCAD>
+            <PriceCHF>262.57</PriceCHF>
+            <PriceNOK>2 518,60</PriceNOK>
+            <PriceJPY>32,869</PriceJPY>
+            <PriceSEK>2607.24</PriceSEK>
+            <PriceHKD>2239.09</PriceHKD>
+            <PriceSGD>378.41</PriceSGD>
+            <PriceZAR>4440.24</PriceZAR>
+            <PriceINR>21,380.09</PriceINR>
+            <PriceTWD>7,937.7</PriceTWD>
+        </Pricing>
+        <BookingType>OnRequest</BookingType>
+        <VoucherOption>VOUCHER_E</VoucherOption>
+    </Product>
+
+</Products>

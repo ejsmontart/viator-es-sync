@@ -1,0 +1,49 @@
+version: '3.7'
+services:
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.16.3
+        container_name: elasticsearch
+        volumes:
+          - es-data-volume:/usr/share/elasticsearch/data:rw
+        environment:
+          - bootstrap.memory_lock=true
+          - "ES_JAVA_OPTS=-Xms6g -Xmx6g"
+          - discovery.type=single-node
+        ports:
+          - "9300:9300"
+          - "9200:9200"
+        networks:
+          - viator-sync-net
+
+    kibana:
+        image: docker.elastic.co/kibana/kibana:7.16.3
+        container_name: kibana
+        depends_on:
+            - elasticsearch
+        ports:
+            - 5601:5601
+        networks:
+            - viator-sync-net
+
+    viator-sync:
+        image: viator-sync
+        container_name: viator-sync
+        depends_on:
+            - elasticsearch
+        environment:
+          - "VIATOR_API_KEY=${VIATOR_API_KEY}"
+          - "VIATOR_API_HOST_PREFIX=${VIATOR_API_HOST_PREFIX}"
+          - "VIATOR_ES_URL=${VIATOR_ES_URL}"
+          - "VIATOR_LOCALES=${VIATOR_LOCALES}"
+        networks:
+          - viator-sync-net
+
+volumes:
+    es-data-volume:
+        driver: local
+    
+networks:
+    viator-sync-net:
+        external: false
+        name: viator-sync-net
+        driver: bridge
